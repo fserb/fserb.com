@@ -23,20 +23,23 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 0 20px;
-  min-height: 100%;
   margin-top: 16em;
+  min-height: calc(100svh - 16em);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 main {
-  min-height: calc(100svh);
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto auto;
 }
 
 header {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -50,30 +53,45 @@ header {
 
 header h1 {
   display: inline-block;
-  font-family: 'Eigerdals';
-  line-height: 1.75em;
-  margin: 0;
-  background-image: var(--accent);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  font-weight: 800;
+  font-size: 2.5em;
 }
 
-h1 a {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Eigerdals';
+  line-height: 1.75em;
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
   background-image: var(--accent);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-weight: 800;
 }
 
-h1 b {
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b,
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
   color: #000;
   font-weight: 800;
+}
+
+#high {
+  font-size: 2em;
+  margin: 2.5em 0;
+  padding: 0;
+}
+
+#high h2 {
+  line-height: 1.25em;
+  margin: 0 0 0 -0.25em;
 }
 
 header nav {
@@ -96,12 +114,12 @@ header nav strong {
   font-weight: 400;
   background-image: var(--accent);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
 header.pinned {
+  width: auto;
   max-width: none;
   margin: 0 -20px;
   box-sizing: border-box;
@@ -138,13 +156,30 @@ header.pinned h1, header.pinned h1 a {
 }
 
 article {
-  margin-top: 4em;
   position: relative;
 }
 
 article p {
   max-width: 720px;
   margin: 2em 0;
+}
+
+article a {
+  text-decoration: none;
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Eigerdals';
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0 0.25em;
+  border-radius: 0.3em;
+}
+
+article a:hover {
+  background-clip: border-box;
+  color: var(--bg);
 }
 
 p b {
@@ -191,8 +226,7 @@ blockquote .sidenote {
 .sidenote-ref {
   background-image: var(--accent);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   color: transparent;
 
   font-size: 0.5em;

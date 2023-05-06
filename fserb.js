@@ -23,7 +23,7 @@ const observeSidenotes = new ResizeObserver(() => {
   }
 
   // we update the article size to include the last footnote, if needed.
-  article.style.height = `max(${article.offsetHeight}px, ${beach}px)`;
+  // article.style.height = `max(${article.offsetHeight}px, ${beach}px)`;
 });
 
 const observePinned = new IntersectionObserver(

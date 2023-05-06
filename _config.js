@@ -33,7 +33,7 @@ site.use(postcss({
   plugins: [
     nano(),
   ],
-  keepDefaultPlugins: false,
+  keepDefaultPlugins: true,
 }));
 
 site.use(terser({
