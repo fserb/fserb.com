@@ -23,8 +23,8 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 0 20px;
-  margin-top: 20svh;
-  min-height: calc(100svh - 20svh);
+  margin-top: 10svh;
+  min-height: calc(100svh - 10svh);
   box-sizing: border-box;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -53,6 +53,7 @@ header {
 
 header h1 {
   font-size: 2.5em;
+  line-height: 1em;
 }
 
 article h2 {
@@ -186,6 +187,8 @@ header.pinned h1, header.pinned h1 a {
 
 article {
   position: relative;
+  padding-top: 5lvh;
+  box-sizing: border-box;
 }
 
 article p, article ul, article ol {
@@ -366,14 +369,52 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1050px) {
+  body {
+    padding: 0;
+  }
+
   header {
-    max-width: 720px;
+    width: 720px;
+    max-width: 90dvw;
+    box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  header.pinned {
+    width: calc(100vw - (100vw - 100%));
+    margin: 0;
+  }
+
+  header.pinned nav {
+    background-image: var(--accent);
+    background-clip: border-box;
+
+    position: relative;
+  }
+
+  main {
+    width: 720px;
+    max-width: 90dvw;
+    box-sizing: border-box;
     margin: 0 auto;
   }
 
   article {
-    max-width: 720px;
+    width: 720px;
+    max-width: 90dvw;
+    box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  aside {
+    max-width: 90dvw;
+    box-sizing: border-box;
+  }
+
+  footer {
+    max-width: 90dvw;
+    box-sizing: border-box;
+    width: 720px;
   }
 
   .sidenote {
