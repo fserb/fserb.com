@@ -53,7 +53,7 @@ header {
 
 header h1 {
   font-size: 2.5em;
-  line-height: 1em;
+  line-height: 1.35em;
 }
 
 article h2 {
@@ -86,6 +86,67 @@ h1 b, h2 b, h3 b, h4 b, h5 b, h6 b,
 h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
   color: #000;
   font-weight: 800;
+}
+
+header nav {
+  color: #666;
+  margin: 0;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav strong {
+  font-weight: 400;
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+header.pinned {
+  width: auto;
+  max-width: none;
+  margin: 0 -20px;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+header.pinned nav {
+  position: absolute;
+  line-height: 2.25em;
+  height: 2.25em;
+  padding-left: 2em;
+}
+
+header.pinned nav strong {
+  color: var(--bg);
+}
+
+header.pinned h1 {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  background-image: var(--accent);
+  background-clip: content-box;
+  border-bottom: 0.5em solid var(--bg);
+}
+
+header.pinned h1, header.pinned h1 a {
+  color: var(--bg);
 }
 
 #high {
@@ -121,67 +182,6 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 #else a:hover {
   background-image: var(--accent);
   background-size: 100%;
-  color: var(--bg);
-}
-
-header nav {
-  color: #666;
-  margin: 0;
-  height: 1.5em;
-  font-size: 0.9em;
-}
-
-header nav a {
-  text-decoration: none;
-  color: var(--text);
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-header nav strong {
-  font-weight: 400;
-  background-image: var(--accent);
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
-}
-
-header.pinned {
-  width: auto;
-  max-width: none;
-  margin: 0 -20px;
-  box-sizing: border-box;
-  display: block;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-}
-
-header.pinned nav {
-  position: absolute;
-  line-height: 2em;
-  height: 2em;
-  padding-left: 2em;
-}
-
-header.pinned nav strong {
-  color: var(--bg);
-}
-
-
-header.pinned h1 {
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 1em;
-  line-height: 2em;
-  background-image: var(--accent);
-  background-clip: content-box;
-  border-bottom: 0.5em solid var(--bg);
-}
-
-header.pinned h1, header.pinned h1 a {
   color: var(--bg);
 }
 
