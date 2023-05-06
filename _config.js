@@ -41,8 +41,7 @@ site.use(terser({
   },
 }));
 
-site.use(codeHighlight({
-}));
+site.use(codeHighlight({}));
 
 // appends .njk on layout
 site.preprocess([".njk", ".md", ".html"], page => {
