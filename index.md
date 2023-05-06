@@ -21,3 +21,12 @@ I make games and write.
 
 </div>
 
+<div id="else">
+
+[BlueSky](https://bsky.app/profile/fserb.com) &middot;
+[Twitter](https://twitter.com/fserb) &middot;
+[Instagram](https://instagram.com/fserb) &middot;
+[GitHub](https://github.com/fserb) &middot;
+[Email](mailto:fserb@fserb.com)
+
+</div>

@@ -23,8 +23,8 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 0 20px;
-  margin-top: 16em;
-  min-height: calc(100svh - 16em);
+  margin-top: 20svh;
+  min-height: calc(100svh - 20svh);
   box-sizing: border-box;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -45,15 +45,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 5em;
+  height: 7svh;
   position: sticky;
   top: -1px;
   z-index: 1000;
 }
 
 header h1 {
-  display: inline-block;
   font-size: 2.5em;
+}
+
+article h2 {
+  font-size: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -85,13 +89,38 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 
 #high {
   font-size: min(2em, 4.5vw);
-  margin: 2.5em 0;
+  margin: 3.5em 0;
   padding: 0;
 }
 
 #high h2 {
   line-height: 1.25em;
   margin: 0 0 0 -0.25em;
+}
+
+#else {
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+#else p {
+  margin: 0;
+  padding: 0;
+}
+
+#else a {
+  background-image: none;
+  display: inline-block;
+}
+
+#else a:hover {
+  background-image: var(--accent);
+  background-size: 100%;
+  color: var(--bg);
 }
 
 header nav {
@@ -160,7 +189,8 @@ article {
 }
 
 article p, article ul, article ol {
-  max-width: 720px;
+  width: 720px;
+  max-width: 90%;
   margin: 2em 0;
 }
 
@@ -210,10 +240,18 @@ p b {
 article blockquote {
   margin: 0 40px;
   width: 640px;
+  max-width: 90%;
   box-sizing: border-box;
   border-left: 4px solid red;
   border-image: var(--accentr) 0 0 0 1;
   padding: 0 40px;
+}
+
+img.placed {
+  max-width: 90vw;
+  height: auto;
+  display: block;
+  margin: 2em 0;
 }
 
 .katex { font-size: 1.1em; }
@@ -296,11 +334,11 @@ p code {
 }
 
 aside {
-  margin-top: 10em;
+  margin-top: 14svh;
 }
 
 footer {
-  margin-top: 10em;
+  margin-top: 14svh;
   height: 3em;
   display: flex;
   flex-direction: row;
