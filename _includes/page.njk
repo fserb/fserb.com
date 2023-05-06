@@ -1,0 +1,48 @@
+---
+title: fserb
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, minimum-scale=1.0">
+  <meta name="generator" content="lume">
+
+  <link rel="stylesheet" type="text/css" href="/fserb.css">
+  <link rel="stylesheet" type="text/css" href="/assets/katex/katex.min.css">
+  <title>{{ title | striptags }} &middot; fserb.com</title>
+  <script type="module" src="/fserb.js"></script>
+
+  {{ head | safe }}
+</head>
+<body>
+  <header>
+    <nav>
+  {% for item in nav.breadcrumb(url) %}
+    {% if not loop.last %}
+    {% if item.data %}
+      <a href="{{item.data.url}}">{% if loop.first %}fserb{% else %}{{ item.data.title | striptags }}{%endif %}</a>
+    {% else %}
+      <span>{{ item.slug }}</span>
+    {% endif %}
+      {% if loop.index0 < loop.length - 2 %}
+        <strong>/</strong>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+    </nav>
+    <h1><a href="/">{{ title }}</a></h1>
+  </header>
+  <main>
+    <article>
+      {{ content }}
+    </article>
+    <footer>
+      <a href="">About</a>
+      <a href="">RSS</a>
+      <a href="/"><img id="ff" src="/assets/F.png"></a>
+    </footer>
+  </main>
+</body>
+</html>

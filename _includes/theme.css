@@ -1,0 +1,104 @@
+.hljs {
+  color: #FFFFFF;
+  background-color: #261E39;
+}
+
+.hljs-meta {
+  color: #F1ECFE;
+}
+
+.hljs-number {
+  color: #7A7FFD;
+}
+
+.hljs-tag {
+  color: #FF659C;
+}
+
+.hljs-variable {
+  color: #73DFA5;
+}
+
+.hljs-variable2 {
+  color: #FFFFFF;
+}
+.hljs-variable3 {
+  color: #E08569;
+}
+
+.hljs-title,
+.hljs-title.function_,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-definition {
+  color: #73DFA5;
+}
+
+.hljs-name,
+.hljs-selector-tag,
+.hljs-keyword {
+  color: #FF659C;
+}
+
+.hljs-operator {
+  color: #FF659C;
+}
+
+.hljs-attribute,
+.hljs-property {
+  color: #1AC8FF;
+}
+
+.hljs-attr,
+.hljs-literal,
+.hljs-operator,
+.hljs-variable,
+.hljs-variable.language_,
+.hljs-selector-attr,
+.hljs-selector-class {
+  color: #73DFA5;
+}
+
+.hljs-built_in,
+.hljs-selector-id,
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #DFD473;
+}
+
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  color: #807796;
+}
+
+.hljs-symbol,
+.hljs-quote,
+.hljs-selector-pseudo,
+.hljs-subst,
+.hljs-section,
+.hljs-bullet,
+.hljs-emphasis,
+.hljs-strong,
+.hljs-addition,
+.hljs-deletion,
+.hljs-doctag,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type {
+  background-color: red;
+  color: #000;
+}
+
+/* purposely ignored */
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation {
+/*  background-color: green;
+  color: #000;
+*/
+}
