@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "<b>Fernando</b> Serboncini"
+comment: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper arcu metus, et tempor mi blandit nec. Aenean malesuada eu massa vitae dictum. Mauris nec est velit. Aliquam varius diam ut dapibus gravida. Vestibulum ullamcorper sapien non turpis maximus, id faucibus purus pellentesque. Quisque eget porttitor purus. Vestibulum ut nisl velit. Donec quis pretium tellus, eget pellentesque[^2] tortor[^3]. Etiam ultrices, libero sollicitudin commodo lacinia, est sapien pulvinar **libero**, eget scelerisque risus tortor a leo.

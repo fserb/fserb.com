@@ -242,8 +242,12 @@ p code {
   border-radius: 5px;
 }
 
+aside {
+  margin-top: 10em;
+}
+
 footer {
-  margin-top: 20em;
+  margin-top: 10em;
   height: 3em;
   display: flex;
   flex-direction: row;

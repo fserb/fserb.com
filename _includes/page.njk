@@ -1,5 +1,6 @@
 ---
 title: fserb
+comment: true
 ---
 
 <!doctype html>
@@ -38,6 +39,17 @@ title: fserb
     <article>
       {{ content }}
     </article>
+    <aside>
+{% if comment %}
+<script src="https://utteranc.es/client.js"
+        repo="fserb/fserb.com"
+        issue-term="{{ url }}"
+        label="comment 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+{% endif %}
+    </aside>
     <footer>
       <a href="">About</a>
       <a href="">RSS</a>
