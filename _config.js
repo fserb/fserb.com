@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 import relativeUrls from "lume/plugins/relative_urls.ts";
 
+import feed from "lume/plugins/feed.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import nav from "lume/plugins/nav.ts";
 import terser from "lume/plugins/terser.ts";
@@ -49,5 +50,18 @@ site.preprocess([".njk", ".md", ".html"], page => {
     page.data.layout += '.njk';
   }
 });
+
+site.use(feed({
+  output: ["/site.rss"],
+  query: "",
+  limit: 20,
+  info: {
+    title: "=site.title",
+    description: "=site.description",
+    date: new Date(),
+    lang: "en",
+    generator: true,
+  },
+}));
 
 export default site;
