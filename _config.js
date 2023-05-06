@@ -3,6 +3,7 @@ import relativeUrls from "lume/plugins/relative_urls.ts";
 
 import feed from "lume/plugins/feed.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
+
 import nav from "lume/plugins/nav.ts";
 import terser from "lume/plugins/terser.ts";
 import postcss from "lume/plugins/postcss.ts";
@@ -28,12 +29,11 @@ const site = lume({
 site.ignore("old", "orig", "_images", ".gitignore", ".git", "NOTES");
 site.copy("assets");
 
-site.use(relativeUrls());
-
-site.use(nav());
-
 site.use(postcss({
-  plugins: [nano()],
+  plugins: [
+    nano(),
+  ],
+  keepDefaultPlugins: false,
 }));
 
 site.use(terser({
@@ -63,5 +63,9 @@ site.use(feed({
     generator: true,
   },
 }));
+
+site.use(relativeUrls());
+site.use(nav());
+
 
 export default site;
