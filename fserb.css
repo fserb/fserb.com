@@ -84,7 +84,7 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 }
 
 #high {
-  font-size: 2em;
+  font-size: min(2em, 4.5vw);
   margin: 2.5em 0;
   padding: 0;
 }
@@ -159,9 +159,23 @@ article {
   position: relative;
 }
 
-article p {
+article p, article ul, article ol {
   max-width: 720px;
   margin: 2em 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li:before {
+  font-family: 'Eigerdals', sans-serif;
+  content: "\25A0";
+  color: var(--text);
+  margin-left: 20px;
+  padding-right: 10px;
 }
 
 article a {
@@ -175,6 +189,13 @@ article a {
   font-weight: 800;
   padding: 0 0.25em;
   border-radius: 0.3em;
+}
+
+block {
+  font-family: 'Eigerdals';
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0 0.25em;
 }
 
 article a:hover {
@@ -294,6 +315,7 @@ footer #ff {
   background-image: var(--accent);
   width: 2em;
   height: 2em;
+  border-radius: 0.2em;
 }
 
 footer a {
