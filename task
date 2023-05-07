@@ -14,6 +14,10 @@ function build {
   lume "$@"
 }
 
+function update-deps {
+  udd _config.js _plugins/*.js
+}
+
 function sync {
   lume "$@"
   rsync -a --partial --progress _site/ fserb.com:fserb/
