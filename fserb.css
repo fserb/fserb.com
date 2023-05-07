@@ -150,7 +150,7 @@ header.pinned h1, header.pinned h1 a {
 }
 
 #high {
-  font-size: min(2em, 4.5vw);
+  font-size: min(2em, 3vw);
   margin: 3.5em 0;
   padding: 0;
 }
@@ -354,8 +354,10 @@ footer {
 footer #ff {
   display: block;
   background-image: var(--accent);
-  width: 2em;
-  height: 2em;
+  background-clip: border-box;
+  padding: 0.4em;
+  width: 1.2em;
+  height: 1.2em;
   border-radius: 0.2em;
 }
 

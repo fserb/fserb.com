@@ -6,13 +6,16 @@ await imInitialize();
 
 import lume from "lume/mod.ts";
 
+import sitemap from "lume/plugins/sitemap.ts";
 import relativeUrls from "lume/plugins/relative_urls.ts";
 import feed from "lume/plugins/feed.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import nav from "lume/plugins/nav.ts";
 import terser from "lume/plugins/terser.ts";
+import svgo from "lume/plugins/svgo.ts";
 import postcss from "lume/plugins/postcss.ts";
 import nano from "npm:cssnano";
+import minifyHTML from "lume/plugins/minify_html.ts";
 
 import mdSidenote from "./_plugins/mdSidenote.js";
 import markdownItKatex from "npm:@iktakahiro/markdown-it-katex@4.0.1";
@@ -31,7 +34,7 @@ const site = lume({
   },
 });
 
-site.ignore("old", "orig", "_images", ".gitignore", ".git", "NOTES");
+site.ignore("old", "orig", ".gitignore", ".git", "NOTES");
 site.copy("assets");
 
 site.copy("exp/life/images");
@@ -50,6 +53,9 @@ site.use(terser({
   },
 }));
 
+site.use(svgo());
+site.use(minifyHTML());
+
 site.use(codeHighlight({}));
 
 site.preprocess([".md"], page => {
@@ -63,6 +69,7 @@ site.preprocess([".njk", ".md", ".html"], page => {
   }
 });
 
+site.use(sitemap());
 site.use(feed({
   output: ["/site.rss"],
   query: "",
