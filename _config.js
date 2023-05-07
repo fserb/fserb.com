@@ -1,5 +1,5 @@
 // import {Image} from "https://deno.land/x/imagescript@1.2.15/mod.ts";
-import * as path from "https://deno.land/std@0.113.0/path/mod.ts";
+import * as path from "https://deno.land/std@0.186.0/path/mod.ts";
 
 import {ImageMagick, MagickFormat, initialize as imInitialize} from "https://deno.land/x/imagemagick_deno@0.0.22/mod.ts";
 await imInitialize();
@@ -14,7 +14,7 @@ import nav from "lume/plugins/nav.ts";
 import terser from "lume/plugins/terser.ts";
 import svgo from "lume/plugins/svgo.ts";
 import postcss from "lume/plugins/postcss.ts";
-import nano from "npm:cssnano";
+import nano from "npm:cssnano@6.0.1";
 import minifyHTML from "lume/plugins/minify_html.ts";
 
 import mdSidenote from "./_plugins/mdSidenote.js";
