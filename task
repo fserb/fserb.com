@@ -2,10 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-function dev {
-  lume "$@"
-}
-
 function watch {
   lume --watch "$@"
 }
