@@ -391,6 +391,15 @@ article hr.section:after {
   text-align: center;
 }
 
+article .star {
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 1.25em;
+}
+
 
 dl#fluxlist {
   column-width: 240px;
@@ -433,6 +442,7 @@ dl#fluxlist dd a {
 
 dl#fluxlist dd a:hover {
   text-decoration: underline;
+  color: #4B78D3;
 }
 
 dl#fluxlist hr {

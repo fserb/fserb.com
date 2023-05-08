@@ -39,7 +39,10 @@ comment: true
   </header>
   <main>
     <article>
-    {{ content | replace("<hr>\n<hr>", "<hr class='section' />") }}
+    {{ content | replace("<hr>\n<hr>", "<hr class='section' />")
+               | replace("★", "<span class=star>★</span>")
+               | replace("⭐️", "<span class=star>★</span>")
+    }}
     </article>
 {% if comment %}
     <aside>
