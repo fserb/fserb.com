@@ -110,6 +110,7 @@ header nav strong {
   background-image: var(--accent);
   background-size: 100%;
   background-clip: text;
+  padding: 0 0.5em;
   color: transparent;
 }
 
@@ -149,6 +150,24 @@ header.pinned h1, header.pinned h1 a {
   color: var(--bg);
 }
 
+#high a, #else a, #other a {
+  text-decoration: none;
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Eigerdals';
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0 0.25em;
+  border-radius: 0.3em;
+}
+
+#high a:hover, #else a:hover, #other a:hover {
+  background-clip: border-box;
+  color: var(--bg);
+}
+
 #high {
   font-size: min(2em, 3vw);
   margin: 3.5em 0;
@@ -175,7 +194,6 @@ header.pinned h1, header.pinned h1 a {
 }
 
 #else a {
-  background-image: none;
   display: inline-block;
 }
 
@@ -212,16 +230,13 @@ li:before {
 }
 
 article a {
-  text-decoration: none;
-  background-image: var(--accent);
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
-  font-family: 'Eigerdals';
-  text-transform: uppercase;
-  font-weight: 800;
-  padding: 0 0.25em;
-  border-radius: 0.3em;
+  color: var(--text);
+  font-weight: 600;
+  position: relative;
+}
+
+article a:hover {
+  color: #C64D7B;
 }
 
 block {
@@ -229,11 +244,6 @@ block {
   text-transform: uppercase;
   font-weight: 800;
   padding: 0 0.25em;
-}
-
-article a:hover {
-  background-clip: border-box;
-  color: var(--bg);
 }
 
 p b {
@@ -339,6 +349,59 @@ p code {
 aside {
   margin-top: 14svh;
 }
+
+article hr {
+  background-image: var(--accent);
+  height: 6px;
+  border-radius: 3px;
+  margin: 3em auto;
+  border: none;
+  width: 50%;
+}
+
+dl#fluxlist {
+  column-width: 240px;
+  column-fill: balance;
+}
+
+dl#fluxlist dt {
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+
+  font-family: 'Eigerdals';
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+dl#fluxlist div {
+  break-inside: avoid-column;
+}
+
+dl#fluxlist dd {
+  margin: 0 0 0.4em 2em;
+  line-height: 1.2em;
+  text-indent: -2em;
+}
+
+dl#fluxlist dd a {
+  background-image: none;
+  color: var(--text);
+
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: none;
+}
+
+dl#fluxlist dd a:hover {
+  text-decoration: underline;
+}
+
 
 footer {
   margin-top: 14svh;

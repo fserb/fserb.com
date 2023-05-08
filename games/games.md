@@ -6,6 +6,8 @@ skipfeed: true
 date: 2023-05-06 11:45
 ---
 
+<div id="other">
+
 - [Duoban](https://duoban.co) a puzzle game. 2021.
 - [Termo](https://term.ooo) a portuguese word game. 2022.
 - [One Tiny Game](https://one.fserb.com) an experiment with micro games. 2021.
@@ -19,3 +21,5 @@ date: 2023-05-06 11:45
 - [Every 10 seconds a window washer falls to his death](https://fserb.com/gamejams/ld27)
 Ludum Dare 27. Made in 72h. 2013.
 - [Infiloop](https://fserb.com/infiloop/) a web game. 2012.
+
+</div>

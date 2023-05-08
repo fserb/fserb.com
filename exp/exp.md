@@ -6,6 +6,7 @@ skipfeed: true
 date: 2023-05-06 11:45
 ---
 
+<div id="other">
 
 - [Life](/exp/life) perspective. 2021.
 
@@ -14,3 +15,5 @@ date: 2023-05-06 11:45
 
 - [Class Média Sofre](https://classemediasofre.tumblr.com/) a humor tumblr in Portuguese. 2011.
 - [NewsCloud](https://fserb.com/newscloud/) a news cloud aggregator. 2006.
+
+</div>

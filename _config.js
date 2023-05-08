@@ -60,11 +60,21 @@ site.use(minifyHTML());
 site.use(codeHighlight({}));
 
 site.preprocess([".md"], page => {
+  const path = page.src.path.split('/');
+
+  if (path.length <= 2 || path[1] != "flux" || path[2] == "flux") return;
+
+  page.data.flux = path.slice(2, -1);
+});
+
+// Remind to put dates on articles
+site.preprocess([".md"], page => {
   if (page.data.date == page.src?.created) {
     console.log(`Missing date on '${page.src.entry.path}': date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`);
   }
 });
 
+// Make sure that all Markdown files are also NJK templates.
 site.preprocess([".md"], page => {
   page.data.templateEngine = ["njk", "md"];
 });
