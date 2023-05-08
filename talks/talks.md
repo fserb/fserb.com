@@ -2,6 +2,8 @@
 layout: page
 title: "Presentations <b>&</b> Talks"
 comment: false
+skipfeed: true
+date: 2023-05-06 11:44
 ---
 
 - [Telefonemas Podcast](https://www.youtube.com/watch?v=_8FUk2Vw5OE) a chat in portuguese about Termo. 2022.

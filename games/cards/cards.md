@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Printable card games
+date: 2021-10-10 11:31
 ---
 
 ## Shephy

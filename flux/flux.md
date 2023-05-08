@@ -2,6 +2,8 @@
 layout: page
 title: "Flux<b>, a digital garden</b>"
 comment: false
+skipfeed: true
+date: 2023-05-06 11:45
 ---
 
 A digital garden is a collection of notes, post, comments. There are several good explanations

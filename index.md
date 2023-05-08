@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "<b>Fernando</b> Serboncini"
+skipfeed: true
 comment: false
+date: 2023-05-04 23:22
 ---
 
 I'm from *São Paulo, Brazil* living in *Montreal, Canada*.<br>

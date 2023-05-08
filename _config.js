@@ -1,5 +1,6 @@
 // import {Image} from "https://deno.land/x/imagescript@1.2.15/mod.ts";
 import * as path from "https://deno.land/std@0.186.0/path/mod.ts";
+import {format as dateFormat} from "https://deno.land/std@0.186.0/datetime/mod.ts";
 
 import {ImageMagick, MagickFormat, initialize as imInitialize} from "https://deno.land/x/imagemagick_deno@0.0.22/mod.ts";
 await imInitialize();
@@ -59,6 +60,12 @@ site.use(minifyHTML());
 site.use(codeHighlight({}));
 
 site.preprocess([".md"], page => {
+  if (page.data.date == page.src?.created) {
+    console.log(`Missing date on '${page.src.entry.path}': date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`);
+  }
+});
+
+site.preprocess([".md"], page => {
   page.data.templateEngine = ["njk", "md"];
 });
 
@@ -72,7 +79,7 @@ site.preprocess([".njk", ".md", ".html"], page => {
 site.use(sitemap());
 site.use(feed({
   output: ["/site.rss"],
-  query: "",
+  query: "skipfeed=undefined",
   limit: 20,
   info: {
     title: "=site.title",
