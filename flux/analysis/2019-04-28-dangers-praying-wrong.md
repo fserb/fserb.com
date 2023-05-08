@@ -12,9 +12,8 @@ Before we catch up with more current affairs...
 
 The Greeks knew Nyx was older and stronger than Zeus. But time passed, and we ended up with this version:
 
-> In the beginning God created the heavens and the earth. The earth was without form, and void; and darkness was on the face of the deep. And the Spirit of God was hovering over the face of the waters.[^1]
-
-[^1]: New King James Version [Genesis 1:1-2](https://www.biblegateway.com/passage/?search=Genesis%201:1-2&version=NKJV)
+> In the beginning God created the heavens and the earth. The earth was without form, and void; and darkness was on the face of the deep. And the Spirit of God was hovering over the face of the waters.
+^[New King James Version [Genesis 1:1-2](https://www.biblegateway.com/passage/?search=Genesis%201:1-2&version=NKJV)]
 
 Notice the sleight of hand. Where did Darkness come from? Darkness was already there *in the beginning*, of course it must have been. *In the beginning* there was just darkness. This feels like we missed the real beginning of the story.
 
@@ -39,9 +38,8 @@ Of course, somebody noticed.
 > "I will ascend into heaven,<br>
 > I will exalt my throne above the stars of God;<br>
 > I will also sit on the mount of the congregation<br>
-> On the farthest sides of the north;"[^2]
-
-[^2]: NKJV [Isaiah 14:12-13](https://www.biblegateway.com/passage/?search=Isaiah%2014:12-13&version=NKJV)
+> On the farthest sides of the north;"
+^[NKJV [Isaiah 14:12-13](https://www.biblegateway.com/passage/?search=Isaiah%2014:12-13&version=NKJV)]
 
 Lucifer, the morning star, the light-bringer. Lucifer was in a different league. He was playing the chaos game. Above the stars. He was supposed to be yin-yanging with Nyx. Before God's beginning. But it was too late for him. He was already caught in the middle of the story. *"You who weakened the nations"*. God had changed the game and we were all stuck in it. So Lucifer had to be put in his place.
 
@@ -51,9 +49,8 @@ Lucifer appears as a realization of a different cosmology (darkness and light), 
 >
 > Resistance becomes evilness at the same time that Control becomes goodness. God is great because he set up the rules. His goodness coming from his power, his knowledge and his all seeing eye.
 >
-> The fall of Lucifer is the symbolic passage that marks the creation of ethics in Western societies. Good gets confused with control; Evil with resistance. The myth of Lucifer is also the myth of the legitimacy of power. [^3]
-
-[^3]: Translated from [Vianna, Tulio. (2007). Transparência pública, opacidade privada: o direito como instrumento de limitação do poder na sociedade de controle.](https://www.researchgate.net/publication/26977314_Transparencia_publica_opacidade_privada_o_direito_como_instrumento_de_limitacao_do_poder_na_sociedade_de_controle)
+> The fall of Lucifer is the symbolic passage that marks the creation of ethics in Western societies. Good gets confused with control; Evil with resistance. The myth of Lucifer is also the myth of the legitimacy of power.
+> ^[Translated from [Vianna, Tulio. (2007). Transparência pública, opacidade privada: o direito como instrumento de limitação do poder na sociedade de controle.](https://www.researchgate.net/publication/26977314_Transparencia_publica_opacidade_privada_o_direito_como_instrumento_de_limitacao_do_poder_na_sociedade_de_controle)]
 
 I can hear you thinking. *"They were just trying to scare us into believing in God"*. Save your cynicism for Saul of Tarsus, a.k.a Apostole Paul, a.k.a one of the first to make a big pact with the Devil. This is the Old Testament. They were still trying to warn us.
 
@@ -66,9 +63,8 @@ Don't meme-think this. This is not a "if you don't share this to 10 people, your
 
 Samzdat's [Uruk Series](https://samzdat.com/the-uruk-series/) is amazing. Go read it. Among other things, it talks about the replacement of *metis* - local, hard to express, experiential, ritual-encoded knowledge - by *episteme* - quantifiable, abstract, theoretical knowledge:
 
-> Think Soylent in lieu of meals, [Brutalist apartment complexes](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/) instead of town squares, standardized tests over apprenticeship, nuclear replacing extended family, and the way capitalism selects for profit at the cost of... externalities.[^4]
-
-[^4]: Hotel Concierge [Shame & Socieity](https://hotelconcierge.tumblr.com/post/173526578129/shame-society)
+> Think Soylent in lieu of meals, [Brutalist apartment complexes](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/) instead of town squares, standardized tests over apprenticeship, nuclear replacing extended family, and the way capitalism selects for profit at the cost of... externalities.
+^[Hotel Concierge [Shame & Socieity](https://hotelconcierge.tumblr.com/post/173526578129/shame-society)]
 
 The series talks about this from a modern state perspective, but I'd claim it further: in the search for *episteme*, we always end up destroying *metis*. *From 0 to 10 how much do you love me? ... silence*. The hope of progress is that we can outsmart experiential knowledge, but, more often than we'd hope, we can't and we make a mess of it.
 
@@ -98,9 +94,8 @@ The devil has many names.
 
 ![](images/angelus-novus.jpg)
 
-> A Klee painting named Angelus Novus shows an angel looking as though he is about to move away from something he is fixedly contemplating. His eyes are staring, his mouth is open, his wings are spread. This is how one pictures the angel of history. His face is turned toward the past. Where we perceive a chain of events, he sees one single catastrophe which keeps piling wreckage upon wreckage and hurls it in front of his feet. The angel would like to stay, awaken the dead, and make whole what has been smashed. But a storm is blowing from Paradise; it has got caught in his wings with such violence that the angel can no longer close them. The storm irresistibly propels him into the future to which his back is turned, while the pile of debris before him grows skyward. This storm is what we call progress.[^5]
-
-[^5]: Walter Benjamin's [On the concept of history](https://www.sfu.ca/~andrewf/CONCEPT2.html)
+> A Klee painting named Angelus Novus shows an angel looking as though he is about to move away from something he is fixedly contemplating. His eyes are staring, his mouth is open, his wings are spread. This is how one pictures the angel of history. His face is turned toward the past. Where we perceive a chain of events, he sees one single catastrophe which keeps piling wreckage upon wreckage and hurls it in front of his feet. The angel would like to stay, awaken the dead, and make whole what has been smashed. But a storm is blowing from Paradise; it has got caught in his wings with such violence that the angel can no longer close them. The storm irresistibly propels him into the future to which his back is turned, while the pile of debris before him grows skyward. This storm is what we call progress.
+^[Walter Benjamin's [On the concept of history](https://www.sfu.ca/~andrewf/CONCEPT2.html)]
 
 Of this storm, we call it [Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/):
 
@@ -125,9 +120,8 @@ So slowly we went. Making pact after pact. Changing *metis* for *episteme*. Our 
 >
 > Worship power, you will end up feeling weak and afraid, and you will need ever more power over others to numb you to your own fear. Worship your intellect, being seen as smart, you will end up feeling stupid, a fraud, always on the verge of being found out. But the insidious thing about these forms of worship is not that they’re evil or sinful, it’s that they’re unconscious. They are default settings.
 >
-> They’re the kind of worship you just gradually slip into, day after day, getting more and more selective about what you see and how you measure value without ever being fully aware that that’s what you’re doing. [^6]
-
-[^6]: David Foster Wallace, [This is water](https://fs.blog/2012/04/david-foster-wallace-this-is-water/)
+> They’re the kind of worship you just gradually slip into, day after day, getting more and more selective about what you see and how you measure value without ever being fully aware that that’s what you’re doing.
+^[David Foster Wallace, [This is water](https://fs.blog/2012/04/david-foster-wallace-this-is-water/)]
 
 DFW was into something but I think he missed the conclusion: this is already our modern god. Our holiness of choice between power, beauty, intelligence and religion. Our own weak modern deity.
 

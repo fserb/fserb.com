@@ -4,5 +4,12 @@ title: Games
 date: 2023-05-07 22:58
 ---
 
-Best Games Shows 2023
+Last updated: 2023-05-08.
+
+## Playing now
+
+* **The Last of Us - Part 1**
+
+## 2023
+
 

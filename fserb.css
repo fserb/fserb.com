@@ -447,7 +447,7 @@ dl#fluxlist dd a:hover {
 
 dl#fluxlist hr {
   column-span: all;
-  margin: 3em auto;
+  margin: 5em auto;
   width: 60%;
 }
 

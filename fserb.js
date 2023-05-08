@@ -2,6 +2,13 @@
 
 const tinyScreen = window.matchMedia('(max-width: 1050px)');
 
+function getParentBlockquote(element) {
+  while (element && element.tagName != "BLOCKQUOTE") {
+    element = element.parentElement;
+  }
+  return element;
+}
+
 const observeSidenotes = new ResizeObserver(() => {
   const article = document.getElementsByTagName("article")[0];
 
@@ -18,11 +25,16 @@ const observeSidenotes = new ResizeObserver(() => {
     if (!anchor) continue;
 
     if (label.startsWith("inline")) {
-      anchor = anchor.previousElementSibling;
+      const bq = getParentBlockquote(anchor);
+      if (bq) {
+        anchor = bq;
+      } else {
+        anchor = anchor.previousElementSibling;
+      }
     }
 
     let pos = anchor.offsetTop + anchor.offsetHeight / 2 - 0.5;
-    if (anchor.tagName == "IMG") {
+    if (anchor.tagName == "IMG" || anchor.tagName == "BLOCKQUOTE") {
       pos = anchor.offsetTop + anchor.offsetHeight - e.offsetHeight;
     }
 
