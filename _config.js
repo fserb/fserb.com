@@ -1,9 +1,5 @@
-// import {Image} from "https://deno.land/x/imagescript@1.2.15/mod.ts";
 import * as path from "https://deno.land/std@0.186.0/path/mod.ts";
 import {format as dateFormat} from "https://deno.land/std@0.186.0/datetime/mod.ts";
-
-import {ImageMagick, MagickFormat, initialize as imInitialize} from "https://deno.land/x/imagemagick_deno@0.0.22/mod.ts";
-await imInitialize();
 
 import lume from "lume/mod.ts";
 
@@ -18,8 +14,9 @@ import postcss from "lume/plugins/postcss.ts";
 import nano from "npm:cssnano@6.0.1";
 import minifyHTML from "lume/plugins/minify_html.ts";
 
-import mdSidenote from "./_plugins/mdSidenote.js";
 import markdownItKatex from "npm:@iktakahiro/markdown-it-katex@4.0.1";
+import mdSidenote from "./_plugins/mdSidenote.js";
+import mdImageSize from "./_plugins/mdImageSize.js";
 
 const site = lume({
   location: new URL("https://fserb.com"),
@@ -31,15 +28,13 @@ const site = lume({
   },
   markdown: {
     options: { typographer: true },
-    plugins: [markdownItKatex, mdSidenote],
+    plugins: [markdownItKatex, mdSidenote, mdImageSize],
   },
 });
 
-site.ignore("old", "orig", ".gitignore", ".git", "NOTES");
+site.ignore("old", "orig", ".gitignore", ".git", "NOTES", "lume");
 site.copy("assets");
-
-site.copy("exp/life/images");
-site.copy("games/cards/data");
+site.copy([".jpg", ".gif", ".png", ".webp", ".pdf"]);
 
 site.use(postcss({
   plugins: [
@@ -55,7 +50,7 @@ site.use(terser({
 }));
 
 site.use(svgo());
-site.use(minifyHTML());
+// site.use(minifyHTML());
 
 site.use(codeHighlight({}));
 
@@ -103,43 +98,8 @@ site.use(feed({
 site.use(relativeUrls());
 site.use(nav());
 
-// Image tag that resizes.
-site.filter('image', async (src, maxwidth=1440) => {
-  let srcPath = path.join("_images", src);
-  let targetPath = "assets/images";
-  if (src.startsWith("./")) {
-    srcPath = src;
-    targetPath = src.substring(2, src.lastIndexOf('/'))
-  }
+site.filter('image', () => {});
 
-  const data = await Deno.readFile(srcPath);
-  let filename, width, height;
-  await ImageMagick.read(data, async image => {
-    width = Math.min(maxwidth, image.width);
-    height = Math.round(image.height * width / image.width);
-
-    const dot = src.lastIndexOf('.');
-    const basename = src.slice(src.lastIndexOf('/') + 1, dot);
-    const ext = src.slice(dot + 1);
-    filename = `${basename}.${width}.${ext}`;
-    const pathname = path.join("_site", targetPath, filename);
-
-    image.quality = 100;
-
-    image.resize(width, height);
-
-    const format = (ext == "jpeg" || ext == "jpg") ? MagickFormat.JPEG : MagickFormat.PNG;
-
-    await Deno.mkdir(path.join("_site", targetPath), {recursive: true});
-
-    image.write(format, data => Deno.writeFile(pathname, data));
-  });
-
-  width = Math.round(width / 2);
-  height = Math.round(height / 2);
-
-  return `<img class="placed" loading="lazy" decoding="async" alt="" src="/${targetPath}/${filename}" width="${width}" height="${height}">`;
-}, true);
-
+  // return `<img class="placed" loading="lazy" decoding="async" alt="" src="/${targetPath}/${filename}" width="${width}" height="${height}">`;
 
 export default site;

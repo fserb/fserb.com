@@ -10,7 +10,7 @@ date: 2021-10-10 11:31
 
 This is a base game reskin.
 
-{{ "./games/cards/data/shephy.png" | image() }}
+![](data/shephy.png)
 
 > In the solitaire game Shephy, you start with one sheep in your field, and you must manage the event cards presented to you in order to have one thousand sheep in the field before you go through the deck of event cards three times.
 >
@@ -29,7 +29,7 @@ Print and play my reskin: [shephy.pdf](data/shephy.pdf) 13 double-sided pages. 7
 
 This is a base game reskin with Calvin and Hobbes theme.
 
-{{ "./games/cards/data/murderersrow.png" | image() }}
+![](data/murderersrow.png)
 
 > Deal 10 cards in a row. Kill 9 of them.
 >

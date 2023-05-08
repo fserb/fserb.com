@@ -207,6 +207,7 @@ article {
   position: relative;
   padding-top: 5lvh;
   box-sizing: border-box;
+  counter-reset: section;
 }
 
 article p, article ul, article ol {
@@ -257,14 +258,14 @@ article blockquote {
   box-sizing: border-box;
   border-left: 4px solid red;
   border-image: var(--accentr) 0 0 0 1;
-  padding: 0 40px;
+  padding: 0 0 0 40px;
 }
 
-img.placed {
+article img {
   max-width: 90vw;
   height: auto;
   display: block;
-  margin: 2em 0;
+  margin: 2em auto;
 }
 
 .katex { font-size: 1.1em; }
@@ -283,6 +284,11 @@ img.placed {
   line-height: 1.4em;
   position: absolute;
   left: 740px;
+}
+
+.sidenote-noblock {
+  border: none;
+  padding: 0;
 }
 
 .sidenote p {
@@ -312,8 +318,9 @@ blockquote .sidenote {
 }
 
 .sidenote-ref-inline {
-  width: 0;
+  display: none;
 }
+
 pre {
   width: 720px;
   border-radius: 10px;
@@ -354,10 +361,36 @@ article hr {
   background-image: var(--accent);
   height: 6px;
   border-radius: 3px;
-  margin: 3em auto;
+  margin: 5em 39% 5em 11%;
   border: none;
   width: 50%;
 }
+
+article hr.section {
+  background-image: none;
+  max-width: 100%;
+  margin: 5em 0;
+  width: 720px;
+  text-align: center;
+}
+
+article hr.section:after {
+  counter-increment: section;
+  content: counter(section, upper-roman);
+
+  background-image: var(--accent);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Eigerdals';
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 800;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 dl#fluxlist {
   column-width: 240px;
@@ -402,6 +435,11 @@ dl#fluxlist dd a:hover {
   text-decoration: underline;
 }
 
+dl#fluxlist hr {
+  column-span: all;
+  margin: 3em auto;
+  width: 60%;
+}
 
 footer {
   margin-top: 14svh;
@@ -469,6 +507,15 @@ footer a:hover {
     max-width: 90dvw;
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  article p, article ul, article ol {
+    max-width: 100%;
+  }
+
+  article hr {
+    margin: 5em auto;
+    width: 50%;
   }
 
   aside {

@@ -14,16 +14,25 @@ const observeSidenotes = new ResizeObserver(() => {
 
   for (const e of document.getElementsByClassName("sidenote")) {
     const label = e.getAttribute("sidenote");
-    const anchor = document.getElementById(`sidenote-ref-${label}`);
+    let anchor = document.getElementById(`sidenote-ref-${label}`);
     if (!anchor) continue;
-    const pos = anchor.offsetTop + anchor.offsetHeight / 2 - 0.5;
+
+    if (label.startsWith("inline")) {
+      anchor = anchor.previousElementSibling;
+    }
+
+    let pos = anchor.offsetTop + anchor.offsetHeight / 2 - 0.5;
+    if (anchor.tagName == "IMG") {
+      pos = anchor.offsetTop + anchor.offsetHeight - e.offsetHeight;
+    }
+
     const top = Math.max(pos, beach);
     beach = top + e.offsetHeight;
     e.style.top = `${top}px`;
   }
 
   // we update the article size to include the last footnote, if needed.
-  // article.style.height = `max(${article.offsetHeight}px, ${beach}px)`;
+  article.style.height = `max(${article.offsetHeight}px, ${beach}px)`;
 });
 
 const observePinned = new IntersectionObserver(

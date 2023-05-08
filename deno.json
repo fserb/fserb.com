@@ -6,5 +6,6 @@
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.17.0/"
+    // "lume/" : "./lume/"
   }
 }
