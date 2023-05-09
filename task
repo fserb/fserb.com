@@ -29,19 +29,17 @@ function optimize-images {
     if (( width > MAX_WIDTH )); then
       echo "$file: Too big. Resizing."
       convert "$file" -resize $MAX_WIDTH "$file"
-    elif (( width < MIN_WIDTH )); then
-      echo "$file: too small."
     fi
 
     if [[ "$file" == *.png ]]; then
       echo "$file: Optimizing."
-      optipng -o9 "$file"
+      optipng -quiet -o9 "$file"
     fi
 
     # run jpegoptim for jpegs
     if [[ "$file" == *.jpg ]]; then
       echo "$file: Optimizing."
-      jpegoptim -o --strip-all --all-progressive -v "$file"
+      jpegoptim --quiet -o --strip-all --all-progressive "$file"
     fi
 
   done < <(find . \
