@@ -44,7 +44,9 @@ function optimize-images {
       jpegoptim -o --strip-all --all-progressive -v "$file"
     fi
 
-  done < <(find . -type f \( -iname "*.png" -o -iname "*.jpg" \))
+  done < <(find . \
+    -type d \( -name "_site" -o -name "old" -o -name "orig" \) -prune \
+    -o \( -type f \( -iname "*.png" -o -iname "*.jpg" \) -print \))
 }
 
 function help {
