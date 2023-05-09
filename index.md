@@ -27,8 +27,10 @@ I make games and write.
 
 [BlueSky](https://bsky.app/profile/fserb.com) &middot;
 [Twitter](https://twitter.com/fserb) &middot;
-[Instagram](https://instagram.com/fserb) &middot;
+[Instagram](https://instagram.com/fserb)
+
 [GitHub](https://github.com/fserb) &middot;
-[Email](mailto:fserb@fserb.com)
+[Email](mailto:fserb@fserb.com) &middot;
+[Calendar](https://calendly.com/fserb/30min)
 
 </div>

@@ -19,6 +19,34 @@ function sync {
   rsync -a --partial --progress _site/ fserb.com:fserb/
 }
 
+function optimize-images {
+  MAX_WIDTH=1440
+  MIN_WIDTH=720
+
+  while IFS= read -r file; do
+    width=$(identify -format "%w" "$file")
+
+    if (( width > MAX_WIDTH )); then
+      echo "$file: Too big. Resizing."
+      convert "$file" -resize $MAX_WIDTH "$file"
+    elif (( width < MIN_WIDTH )); then
+      echo "$file: too small."
+    fi
+
+    if [[ "$file" == *.png ]]; then
+      echo "$file: Optimizing."
+      optipng -o9 "$file"
+    fi
+
+    # run jpegoptim for jpegs
+    if [[ "$file" == *.jpg ]]; then
+      echo "$file: Optimizing."
+      jpegoptim -o --strip-all --all-progressive -v "$file"
+    fi
+
+  done < <(find . -type f \( -iname "*.png" -o -iname "*.jpg" \))
+}
+
 function help {
   echo "$0 <task> <args>"
   echo "Tasks:"

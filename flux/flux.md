@@ -9,7 +9,7 @@ date: 2023-05-06 11:45
 <dl id="fluxlist">
 {% for cat in search.values("flux") | sort %}
 <div><dt>{{ cat }}</dt>
-{% for art in search.pages("flux*=" + cat) %}
+{% for art in search.pages("flux*=" + cat, "title") %}
 <dd><a href="{{ art.data.url }}">{{ art.data.title }}</a></dd>
 {% endfor %}
 </div>
