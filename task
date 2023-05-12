@@ -11,7 +11,7 @@ function build {
 }
 
 function update-deps {
-  udd _config.js _plugins/*.js
+  udd _config.js _plugins/*.js deno.json
 }
 
 function sync {

@@ -3,7 +3,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.17.1/"
+    "lume/": "https://deno.land/x/lume@v1.17.3/"
     // "lume/" : "./lume/"
   }
 }
