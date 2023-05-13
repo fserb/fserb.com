@@ -50,7 +50,7 @@ site.use(terser({
 }));
 
 site.use(svgo());
-// site.use(minifyHTML());
+site.use(minifyHTML());
 
 site.use(codeHighlight({}));
 
@@ -65,7 +65,8 @@ site.preprocess([".md"], page => {
 // Remind to put dates on articles
 site.preprocess([".md"], page => {
   if (page.data.date == page.src?.created) {
-    console.log(`Missing date on '${page.src.entry.path}': date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`);
+    const suggestions = `date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`;
+    console.log(`Missing on '${page.src.entry.path}': ${suggestion}`);
   }
 });
 
@@ -99,7 +100,5 @@ site.use(relativeUrls());
 site.use(nav());
 
 site.filter('image', () => {});
-
-  // return `<img class="placed" loading="lazy" decoding="async" alt="" src="/${targetPath}/${filename}" width="${width}" height="${height}">`;
 
 export default site;
