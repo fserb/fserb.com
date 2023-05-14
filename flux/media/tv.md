@@ -26,10 +26,10 @@ Last updated: 2023-05-08.
 * **The Night Manager S01** ⭐️ Re-watched. Amazing show.
 * **Poker Face S01**
 * **The Last of Us S01** ⭐️
+* **Extraordinary S01**
 * **The Lazarus Project S01** ⭐️
 * **Shrinking S01**
 * **Alaska Daily S01 - part 1** ⭐️
 * **Tulsa King S01** ⭐️
 * **Extraordinary Attorney Woo S01**
-* **Extraordinary S01**
 
