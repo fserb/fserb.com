@@ -65,7 +65,7 @@ site.preprocess([".md"], page => {
 // Remind to put dates on articles
 site.preprocess([".md"], page => {
   if (page.data.date == page.src?.created) {
-    const suggestions = `date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`;
+    const suggestion = `date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`;
     console.log(`Missing on '${page.src.entry.path}': ${suggestion}`);
   }
 });
@@ -88,7 +88,7 @@ site.use(feed({
   query: "skipfeed=undefined",
   limit: 20,
   info: {
-    title: "=site.title",
+    title: "fserb.com",
     description: "=site.description",
     date: new Date(),
     lang: "en",

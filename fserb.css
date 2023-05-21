@@ -11,6 +11,7 @@
 :root {
   --bg: #FFFFFF;
   --text: #212121;
+  --link: #99A;
   --accent: linear-gradient(to right, #FFC23C, #FE759B, #CE7FBD, #79A2F4);
   --accentr: linear-gradient(to bottom, #FFC23C, #FE759B, #CE7FBD, #79A2F4);
 }
@@ -70,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: block;
+  width: max-content;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -231,8 +233,9 @@ li:before {
 }
 
 article a {
-  color: var(--text);
+  color: var(--link);
   font-weight: 600;
+  text-decoration: underline dotted;
   position: relative;
 }
 
@@ -432,7 +435,7 @@ dl#fluxlist dd {
 dl#fluxlist dd a {
   background-image: none;
   color: var(--text);
-
+  text-decoration: underline;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;

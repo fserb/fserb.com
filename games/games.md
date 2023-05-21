@@ -12,7 +12,7 @@ date: 2023-05-06 11:45
 - [Termo](https://term.ooo) a portuguese word game. 2022.
 - [One Tiny Game](https://one.fserb.com) an experiment with micro games. 2021.
 - [Cards](/games/cards). Printable card games. 2020.
-- [Connactic](https://fserb.com/conanctic). A mobile game. 2019.
+- [Connactic](https://fserb.com/connactic). A mobile game. 2019.
 - [Bowling Solitaire](https://fserb.com/bowling). A mobile card game. 2018.
 
 ## Old games
