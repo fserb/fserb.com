@@ -14,6 +14,8 @@ Last updated: 2023-05-08.
 * **Succession S04**
 * **Star Trek: Picard S03**
 * **Alaska Daily S01 - part 2**
+* **King of the Hill S01** ⭐️
+* **Silo S01**
 
 ## 2023
 

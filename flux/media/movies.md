@@ -8,6 +8,7 @@ Last updated: 2023-05-08.
 
 ## 2023
 
+* **Cocaine Bear**, 2023.
 * **Lilo & Stitch**, 2002.
 * **Triangle of Sadness**, 2022.
 * **Lamb**, 2021.
