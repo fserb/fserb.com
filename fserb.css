@@ -11,7 +11,7 @@
 :root {
   --bg: #FFFFFF;
   --text: #212121;
-  --link: #99A;
+  --link: #88A;
   --accent: linear-gradient(to right, #FFC23C, #FE759B, #CE7FBD, #79A2F4);
   --accentr: linear-gradient(to bottom, #FFC23C, #FE759B, #CE7FBD, #79A2F4);
 }
@@ -354,6 +354,7 @@ p code {
   background-color: #261E39;
   padding: 0.25em 0.75em;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
 aside {

@@ -1,5 +1,5 @@
-import * as path from "https://deno.land/std@0.187.0/path/mod.ts";
-import {format as dateFormat} from "https://deno.land/std@0.187.0/datetime/mod.ts";
+import * as path from "https://deno.land/std@0.188.0/path/mod.ts";
+import {format as dateFormat} from "https://deno.land/std@0.188.0/datetime/mod.ts";
 
 import lume from "lume/mod.ts";
 

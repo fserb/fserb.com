@@ -62,6 +62,7 @@
 .hljs-built_in,
 .hljs-selector-id,
 .hljs-regexp,
+.hljs-subst,
 .hljs-string,
 .hljs-meta .hljs-string {
   color: #DFD473;
@@ -76,7 +77,6 @@
 .hljs-symbol,
 .hljs-quote,
 .hljs-selector-pseudo,
-.hljs-subst,
 .hljs-section,
 .hljs-bullet,
 .hljs-emphasis,
