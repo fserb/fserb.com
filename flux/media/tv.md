@@ -14,11 +14,13 @@ Last updated: 2023-05-08.
 * **Succession S04**
 * **Star Trek: Picard S03**
 * **Alaska Daily S01 - part 2**
-* **King of the Hill S01** ⭐️
 * **Silo S01**
+* **King of the Hill S02**
+* **The Diplomat S01** ⭐️ Wow. It's a smart and funny version of Boss.
 
 ## 2023
 
+* **King of the Hill S01** ⭐️
 * **BEEF S01**
 * **Digman! S01**
 * **Star Trek: Picard S02**
