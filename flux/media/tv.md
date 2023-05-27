@@ -16,24 +16,27 @@ Last updated: 2023-05-08.
 * **Alaska Daily S01 - part 2**
 * **Silo S01**
 * **King of the Hill S02**
-* **The Diplomat S01** ⭐️ Wow. It's a smart and funny version of Boss.
+* **The Marvelous Mrs. Maisel S05** ⭐️
+* **Dave S03**
+
 
 ## 2023
 
+* **The Diplomat S01** ⭐️ Wow. It's a smart and funny version of Boss.
 * **King of the Hill S01** ⭐️
+* **The Night Manager S01** ⭐️ Re-watched. Amazing show.
+* **The Last of Us S01** ⭐️
+* **The Lazarus Project S01** ⭐️
+* **Alaska Daily S01 - part 1** ⭐️
+* **Tulsa King S01** ⭐️
 * **BEEF S01**
 * **Digman! S01**
 * **Star Trek: Picard S02**
 * **Star Trek: Picard S01**
 * **Veep S07**
 * **The Night Agent S01**
-* **The Night Manager S01** ⭐️ Re-watched. Amazing show.
 * **Poker Face S01**
-* **The Last of Us S01** ⭐️
 * **Extraordinary S01**
-* **The Lazarus Project S01** ⭐️
 * **Shrinking S01**
-* **Alaska Daily S01 - part 1** ⭐️
-* **Tulsa King S01** ⭐️
 * **Extraordinary Attorney Woo S01**
 

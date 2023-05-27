@@ -9,7 +9,7 @@ date: 2023-05-06 11:45
 <div id="other">
 
 - [Life](/exp/life) perspective. 2021.
-
+- [Better Know Canvas](https://canvas.rocks/) a site with code demos for canvas2D.
 
 ## Old stuff
 

@@ -349,7 +349,7 @@ pre code {
   display: block;
 }
 
-p code {
+p code, li code {
   color: #FFFFFF;
   background-color: #261E39;
   padding: 0.25em 0.75em;
