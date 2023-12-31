@@ -1,6 +1,6 @@
 import { decode  as decodeJPG } from "https://deno.land/x/jpegts@1.1/mod.ts";
-import png from "npm:fast-png@6.1.0";
-import { posix as path } from "https://deno.land/std@0.177.1/path/mod.ts";
+import png from "npm:fast-png@6.2.0";
+import { posix as path } from "https://deno.land/std@0.210.0/path/mod.ts";
 
 const MAXWIDTH = 720;
 

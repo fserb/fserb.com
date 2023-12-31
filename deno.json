@@ -1,9 +1,8 @@
 {
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.17.4/"
-    // "lume/" : "./lume/"
+    "lume/": "https://deno.land/x/lume@v2.0.1/"
   }
 }
