@@ -59,7 +59,7 @@ site.preprocess([".md"], pages => {
   for (const page of pages) {
     const path = page.src.path.split('/');
 
-    if (path.length <= 2 || path[1] != "flux" || path[2] == "flux") return;
+    if (path.length <= 2 || path[1] != "flux" || path[2] == "flux") continue;
 
     page.data.flux = path.slice(2, -1);
   }
