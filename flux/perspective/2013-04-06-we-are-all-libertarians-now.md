@@ -77,7 +77,3 @@ We don’t even know how to talk about companies without thinking of them as peo
 We believe so much that companies are living entities with god given rights (© Ayn Rand), and that government is its clear opposition that what Bane does doesn’t raise any flags. Nobody, not the film producers, writers, director, actors or the audience noticed anything wrong with that sequence’s logic. A sequence of events that can only makes sense in a society where companies are more real than everything else. Except that they aren’t. Which makes everyone dead wrong. Literally.
 
 So next time you talk about government, companies, Mitt Romney or the new thing that The Daily Shows decided is important these days, remember: we are all libertarians now.
-
----
-
-*Written on 2013-04-06*

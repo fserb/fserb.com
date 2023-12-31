@@ -152,7 +152,3 @@ We arrive at the end.
 Moloch, the wind of progress, wanders distracted.
 
 In the back, Nyx smiles. She has been patiently waiting her turn again. We never had a real chance. We have always been, after all, in her kingdom.
-
----
-
-*Written on 2019-04-28*

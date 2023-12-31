@@ -4,5 +4,6 @@
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.0.1/"
+    // "lume/": "/Users/fserb/prj/lume/"
   }
 }

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Movies
-date: 2023-05-08 14:18
+date: 0
 ---
 
-Last updated: 2023-05-31.
+Last updated: {{ date }}.
 
 ## 2023
 

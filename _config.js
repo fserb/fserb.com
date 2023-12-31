@@ -12,12 +12,14 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import terser from "lume/plugins/terser.ts";
 import svgo from "lume/plugins/svgo.ts";
 import postcss from "lume/plugins/postcss.ts";
+import date from "lume/plugins/date.ts";
 import nano from "npm:cssnano@6.0.2";
 import minifyHTML from "lume/plugins/minify_html.ts";
 
 import markdownItKatex from "npm:@iktakahiro/markdown-it-katex@4.0.1";
 import mdSidenote from "./_plugins/mdSidenote.js";
 import mdImageSize from "./_plugins/mdImageSize.js";
+import getLastUpdateTime from "./_plugins/getLastUpdateTime.js";
 
 const site = lume({
   location: new URL("https://fserb.com"),
@@ -46,15 +48,16 @@ site.use(terser({
 }));
 
 site.use(nunjucks({
-    options: {
-      autoescape: false,
-    }
-  }));
+  options: {
+    autoescape: false,
+  }
+}));
+
 site.use(svgo());
 site.use(minifyHTML());
-
 site.use(codeHighlight({}));
 
+// add flux path to all flux pages
 site.preprocess([".md"], pages => {
   for (const page of pages) {
     const path = page.src.path.split('/');
@@ -65,13 +68,11 @@ site.preprocess([".md"], pages => {
   }
 });
 
-// Remind to put dates on articles
-site.preprocess([".md"], pages => {
+// Add updated date for all pages
+site.preprocess([".md"], async pages => {
   for (const page of pages) {
-    if (page.data.date == page.src?.created) {
-      const suggestion = `date: ${dateFormat(page.data.date, "yyyy-MM-dd HH:mm")}`;
-      console.log(`Missing on '${page.src.entry.path}': ${suggestion}`);
-    }
+    if (page.data.date.valueOf() != 0) continue;
+    page.data.date = await getLastUpdateTime(page.src.entry.src);
   }
 });
 
@@ -107,6 +108,7 @@ site.use(feed({
 
 site.use(relativeUrls());
 site.use(nav());
+site.use(date());
 
 site.filter('image', () => {});
 

@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Games
-date: 2023-05-07 22:58
+date: 0
 ---
-
-Last updated: 2023-07-12.
 
 ## Always on
 

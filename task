@@ -2,6 +2,11 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+function lume {
+  export TZ=Z
+  command lume "$@"
+}
+
 function watch {
   lume --watch "$@"
 }

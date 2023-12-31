@@ -1,10 +1,8 @@
 ---
 layout: page
 title: TV Shows
-date: 2023-05-07 22:57
+date: 0
 ---
-
-Last updated: 2023-07-10.
 
 ## Watching now
 

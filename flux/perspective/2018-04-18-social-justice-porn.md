@@ -75,7 +75,3 @@ Stop waiting for validation. What is this, 3rd grade? If it’s legal, if it’s
 So this is our choice now: either we are going to enjoy this feeling of being validated about how we think the world works or we are going to change it. And by it I mean ourselves. We can’t have both ways.
 
 I guess they were right all along, porn has become a public health issue.
-
----
-
-*Written on 2018-04-18*
